@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "flipkart-product-recommender-system"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "langchain",
+    "langchain_text_splitters",
+    "langchain-community",
+    "langchain_groq",
+    "langchain_huggingface",
+    "langchain_classic",
+    "datasets",
+    "pypdf",
+    "python-dotenv",
+    "pandas",
+    "flask",
+    "prometheus_client",
+    "langchain-astradb"
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
