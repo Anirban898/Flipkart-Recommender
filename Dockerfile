@@ -23,10 +23,10 @@ RUN curl -LsSf https://astral.sh/uv/install.sh | sh
 COPY . .
 
 ## Install dependencies via uv
-RUN uv sync --system --no-dev --no-cache
+RUN uv sync --no-dev --no-cache
 
 # Used PORTS
 EXPOSE 5000
 
 # Run the app 
-CMD ["python", "app.py"]
+CMD ["uv","run","python", "app.py"]
